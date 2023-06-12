@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_YWtgwA5dEeGX7KbpCxiqVQ" modelName="top" defined="true" sourceFileRelativePath="Rule110.ma">
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_YWtgwQ5dEeGX7KbpCxiqVQ" instanceName="Rule110">
+      <modelType xmi:type="CoupledModelType" xmi:id="_YWtgwg5dEeGX7KbpCxiqVQ" modelName="Rule110"/>
+    </coupledModels>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_YWtgww5dEeGX7KbpCxiqVQ" type="DEVS" element="_YWtgwA5dEeGX7KbpCxiqVQ" name="Rule110.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_YWtgxA5dEeGX7KbpCxiqVQ"/>
+  </notation:Diagram>
+</xmi:XMI>

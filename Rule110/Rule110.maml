@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> Rule110 &#xd;</components>
+  </top>
+  <Rule110>
+    <type> cell&#xd;</type>
+    <dim> (500,500)&#xd;</dim>
+    <delay> transport&#xd;</delay>
+    <defaultDelayTime> 0.1&#xd;</defaultDelayTime>
+    <border> nowrapped &#xd;</border>
+    <neighbors> Rule110(-1,-1) Rule110(-1,0) Rule110(-1,1) Rule110(0,0)&#xd;</neighbors>
+    <initialValue> 0&#xd;</initialValue>
+    <initialCellsValue> Rule110.val&#xd;</initialCellsValue>
+    <localtransition> Rule110-rule&#xd;</localtransition>
+  </Rule110>
+  <Rule110-rule>
+    <comment> Karnaugh mapping the boolean equation reduces it from&#xd;</comment>
+    <comment>   |A|B|C + |A|B C + |A B|C + |A B C +  A|B|C +  A|B C +  A B|C +  A B C &#xd;</comment>
+    <comment> where A = (-1,-1)&#xd;</comment>
+    <comment> where B = (-1,0)&#xd;</comment>
+    <comment> where C = (-1,1)&#xd;</comment>
+    <comment> to&#xd;</comment>
+    <comment>   |BC + |AB + B|C&#xd;</comment>
+    <rule> 1 0.1 { ( ( (-1,0) = 0 and (-1,1) = 1 ) or ( (-1,-1) = 0 and (-1,0) = 1 ) or ( (-1,0) = 1 and (-1,1</rule>
+    <rule> { (0,0) } 0.1 { t }&#xd;</rule>
+  </Rule110-rule>
+</CDPlusPlus_Builder_Version_1.0.0>
